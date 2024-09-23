@@ -19,6 +19,9 @@
 
 ### Utilização
 
+A API precisa de uma instância do banco de dados Postgres instalada e configurada na porta 5432. O Schema
+'clinica' é criado pelo liquibase e as tabelas populadas para demonstração através do serviço 'Insercao'.
+
 #### Especialidade
 Cadastro de especialidade:
 - URI: http://localhost:8080/especialidade/cadastrar
