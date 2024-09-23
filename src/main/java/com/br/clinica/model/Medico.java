@@ -22,6 +22,6 @@ public class Medico {
     @JoinColumn(name = "ID_ESPECIALIDADE")
     private Especialidade especialidade;
 
-    @OneToMany(mappedBy = "medico", cascade = CascadeType.REMOVE, orphanRemoval = true)
+    @OneToMany(mappedBy = "medico", fetch = FetchType.EAGER)
     private List<Consulta> consultas;
 }
